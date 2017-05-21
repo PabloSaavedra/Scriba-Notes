@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/LvProjectFiles"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+    </ListView>
+
+
+    <!--<com.shamanland.fab.FloatingActionButton-->
+        <!--android:id="@+id/add_note_button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="16dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:src="@drawable/ic_add"-->
+        <!--android:onClick="addNewFile"-->
+        <!--/>-->
+
+    <!--<com.shamanland.fab.FloatingActionButton-->
+        <!--android:id="@+id/settings_note_button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="80dp"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:src="@drawable/ic_menu_white_24dp"-->
+        <!--android:onClick="showSettings"-->
+        <!--/>-->
+    <Button
+        android:id="@+id/add_note_button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_plus"
+        android:onClick="addNewFile"/>
+
+    <Button
+        android:id="@+id/settings_note_button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignTop="@+id/add_note_button"
+        android:layout_toLeftOf="@+id/add_note_button"
+        android:background="@drawable/ic_project_settings_new"
+        android:layout_marginRight="8dp"
+        android:onClick="showSettings"/>
+    <Button
+        android:id="@+id/selections_button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignTop="@+id/settings_note_button"
+        android:layout_toLeftOf="@+id/settings_note_button"
+        android:background="@drawable/ic_notes"
+        android:layout_marginRight="8dp"
+        android:onClick="showNotes"/>
+
+    <ImageView
+        android:id="@+id/addFilesImage"
+        android:layout_width="184dp"
+        android:layout_height="71dp"
+        android:src="@drawable/add_files"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="74dp"
+        android:layout_marginLeft="20dp"
+        />
+
+</RelativeLayout>
